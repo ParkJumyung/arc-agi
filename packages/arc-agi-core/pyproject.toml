@@ -1,0 +1,21 @@
+[project]
+name = "arc-agi-core"
+version = "0.1.14"
+description = "Research tool-kit for tackling ARC(Abstraction and Reasoning Corpus). "
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=2.2.4",
+    "requests>=2.32.3",
+    "svg-py>=1.6.0"
+]
+
+[project.urls]
+Repository = "https://github.com/ParkJumyung/arc-rtk/tree/main/packages/arc-agi-core"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/arc_agi_core"]
