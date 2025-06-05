@@ -19,7 +19,7 @@ pair = task.train[0]
 grid = pair.input
 ```
 
-**Take a look on `examples/arc-agi-demo/demo.ipynb` for detailed demo notebook.**
+**Take a look on [`examples/arc-agi-demo/demo.ipynb`](https://github.com/ParkJumyung/arc-agi/blob/main/examples/arc-agi-demo/demo.ipynb) for detailed demo notebook.**
 
 ## Key Features
 
