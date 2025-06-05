@@ -183,10 +183,10 @@ class RewriteRule:
 
 
 def rewrite(
-    transformations: List[Transformation], rules: Set[RewriteRule]
+    transformations: List[Transformation], rule_set: Set[RewriteRule]
 ) -> List[Transformation]:
     current = deepcopy(transformations)
-    rule_map = {(rule.left, rule.right): rule.simplification for rule in rules}
+    rule_map = {(rule.left, rule.right): rule.simplification for rule in rule_set}
     candidates = deque(range(len(current) - 1))
 
     while candidates:

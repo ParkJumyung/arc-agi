@@ -25,7 +25,7 @@ def rotate_270(x: NDArray) -> NDArray:
 
 @transformation
 def flip_horizontal(x: NDArray) -> NDArray:
-    return np.flip(x)
+    return np.flip(x, axis=1)
 
 
 @transformation
@@ -40,4 +40,4 @@ def flip_diagonal(x: NDArray) -> NDArray:
 
 @transformation
 def flip_antidiagonal(x: NDArray) -> NDArray:
-    return np.flip(x.T, axis=1)
+    return np.flip(x.T)

@@ -12,6 +12,7 @@ from .primitives import (
     flip_diagonal,
     flip_antidiagonal,
 )
+from .rule_set import rule_set
 
 __all__ = [
     "identity",
@@ -22,6 +23,7 @@ __all__ = [
     "flip_vertical",
     "flip_diagonal",
     "flip_antidiagonal",
+    "rule_set",
 ]
 
 primitives = [
